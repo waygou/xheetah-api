@@ -2,6 +2,7 @@
 
 namespace Waygou\XheetahApi;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
@@ -15,8 +16,9 @@ class ServiceProvider extends BaseServiceProvider
     {
         // Load Routes example.
         Route::middleware(['api'])
+             ->prefix('api')
              ->namespace('\Waygou\XheetahApi')
-             ->group(path_separators(__DIR__.'/../routes/api.php'));
+             ->group(__DIR__.'/../routes/api.php');
     }
 
     public function register()
