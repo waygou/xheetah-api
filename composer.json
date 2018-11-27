@@ -1,0 +1,39 @@
+{
+    "name": "waygou/xheetah-api",
+    "description": "Xheetah API / REST for json requests.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "waygou",
+        "xheethah",
+        "php"
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.7.*",
+        "waygou/helpers": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Waygou\\XheetahApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Waygou\\XheetahApi\\ServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Waygou",
+            "email": "bruno.falcao@waygou.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
