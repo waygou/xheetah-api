@@ -1,5 +1,7 @@
 <?php
 
+Route::get('system/test', 'TestController@test');
+
 Route::get('system/device/enroll', function () {
     $json = ['data' => ['response' => [
                     'status'  => 'OK',
